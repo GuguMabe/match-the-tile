@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/8a63870076.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Match-the-tiles</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div class="settings">
+    <h1>Match-the-tiles</h1>
+
+    <h2>choose the grid-size</h2>
+
+    <button class="btn" id="twoByTwo" type="button" onclick="setTo2x2()">2X2</button>
+
+    <button class="btn" id="twoByThree" type="button" onclick="setTo2x3()">2X3</button>
+
+    <button class="btn" id="threeByFour" type="button" onclick="setTo3x4()">3X4</button>
+  </div>
+
+  <section class="memory-game">
+    <div class="memory-card angular-match1 remove">
+      <img src="images/angular.svg" alt="angular" class="front-face angular-image1" data-id="card1" />
+    </div>
+    <div class="memory-card aurelia-match1 remove">
+      <img src="images/aurelia.svg" alt="aurelia" class="front-face aurelia-image1" data-id="card2" />
+    </div>
+    <div class="memory-card backbone-match1 remove">
+      <img src="images/backbone.svg" alt="backbone" class="front-face backbone-image1" data-id="card3" />
+    </div>
+    <div class="memory-card angular-match2 remove">
+      <img src="images/angular.svg" alt="angular" class="front-face angular-image2" data-id="card1" />
+    </div>
+    <div class="memory-card backbone-match2 remove">
+      <img src="images/backbone.svg" alt="backbone" class="front-face backbone-image2" data-id="card3" />
+    </div>
+    <div class="memory-card ember-match1 remove">
+      <img src="images/ember.svg" alt="ember" class="front-face ember-image1" data-id="card4" />
+    </div>
+    <div class="memory-card aurelia-match2 remove">
+      <img src="images/aurelia.svg" alt="aurelia" class="front-face aurelia-image2" data-id="card2" />
+    </div>
+    <div class="memory-card ember-match2 remove">
+      <img src="images/ember.svg" alt="ember" class="front-face ember-image2" data-id="card4" />
+    </div>
+    <div class="memory-card react-match1 remove">
+      <img src="images/react.svg" alt="react" class="front-face react-image1" data-id="card5" />
+    </div>
+    <div class="memory-card vue-match1 remove">
+      <img src="images/vue.svg" alt="vue" class="front-face vue-image1" data-id="card6" />
+    </div>
+    <div class="memory-card react-match2 remove">
+      <img src="images/react.svg" alt="react-" class="front-face react-image2" data-id="card5" />
+    </div>
+    <div class="memory-card vue-match2 remove">
+      <img src="images/vue.svg" alt="vue" class="front-face vue-image2" data-id="card6" />
+    </div>
+  </section>
+
+  <div id="overlay">
+    <div id="timer"></div>
+    <div id="moves"></div>
+    <p>congratulations you win!! You made
+      <span id = "finalmoves"></span> in
+      <span id= "finaltime"></span><br>
+    </p>
+
+
+
+    <button class="restart" type="button" onclick="location.reload()">Play Again</button>
+
+
+  </div>
+
+
+  <script src="src/script.js"></script>
+</body>
+
+</html>
